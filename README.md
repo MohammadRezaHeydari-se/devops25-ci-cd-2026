@@ -1,7 +1,22 @@
-# DevOps25 CI/CD – Dag 2
+# Dag 2 – Continuous Integration
 
-Jag testar hur GitHub Actions kör automatiska tester och kodkontroller när jag pushar en ändring till min egen branch.
+Under dag 2 jobbade jag med GitHub Actions och lärde mig hur tester och kodkontroller körs automatiskt när jag pushar kod.
 
-## Dokumentation
+I det nya kursrepot kör CI både Pytest och Ruff. Alla 5 tester gick igenom.
 
-[Dag 2 – CI-rapport och resultat](docs/day02-ci/report.md)
+Jag gjorde också en praktisk övning i mitt tidigare repo där jag skapade ett fel, undersökte testloggarna och rättade felet.
+
+Där byggdes även en Docker-image efter att testerna hade lyckats. Den nya workflowen innehåller däremot inget Docker-jobb ännu.
+
+## Dokumentation från dag 2
+
+- [CI i det nya kursrepot](docs/day02-ci/report.md)
+- [Min ursprungliga CI-rapport](docs/day02-ci/report-original.md)
+- [Praktisk övning med fel, rättning och Docker-build](docs/day02-practical/report.md)
+
+## Skärmbilder
+
+- [Ruff och tester godkända](docs/day02-practical/screenshots/01-ci-lint-success.png)
+- [Docker-build lyckades](docs/day02-practical/screenshots/02-ci-docker-build-success.png)
+- [Tester misslyckades](docs/day02-practical/screenshots/03-ci-test-failure.png)
+- [CI lyckades efter rättning](docs/day02-practical/screenshots/04-ci-fixed-success.png)
